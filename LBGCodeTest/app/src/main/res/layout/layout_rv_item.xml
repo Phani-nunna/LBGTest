@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/moviePoster"
+        android:background="@color/black"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/placeholder"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_toEndOf="@id/moviePoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="3dp"
+        android:padding="3dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/crew"
+            android:layout_toEndOf="@id/moviePoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieTitle"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/teal_200" />
+        <TextView
+            android:id="@+id/ratting"
+            android:layout_toEndOf="@id/moviePoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crew"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/rattingCount"
+            android:layout_toEndOf="@id/moviePoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratting"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/year"
+            android:layout_toEndOf="@id/moviePoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rattingCount"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/teal_700" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
